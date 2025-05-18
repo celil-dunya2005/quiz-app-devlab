@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevLab Quiz App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-header">
+            <h1>DevLab Quiz</h1>
+            <div class="progress-container">
+                <span id="question-number">Question 1/6</span>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="quiz-container">
+            <div id="question-container">
+                <h2 id="question-text">Question text will appear here</h2>
+                <div id="options-container">
+                </div>
+                <div id="feedback" class="hidden"></div>
+                <button id="next-btn" class="hidden">Next Question</button>
+            </div>
+
+            <div id="results-container" class="hidden">
+                <h2>Quiz Completed!</h2>
+                <div class="score-container">
+                    <div class="score-circle">
+                        <span id="score">0</span>/<span id="total-questions">6</span>
+                    </div>
+                    <p id="score-message">Your score message will appear here</p>
+                </div>
+                <button id="restart-btn">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
